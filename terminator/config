@@ -1,0 +1,170 @@
+[global_config]
+  dbus = False
+  borderless = True
+  tab_position = hidden
+  broadcast_default = all
+  enabled_plugins = LaunchpadBugURLHandler, LaunchpadCodeURLHandler, APTURLHandler, TerminatorThemes
+  suppress_multiple_term_dialog = True
+[keybindings]
+  broadcast_off = <Shift><Alt>n
+  broadcast_group = <Primary><Shift>b
+  broadcast_all = <Shift><Alt>b
+[profiles]
+  [[default]]
+    background_color = "#1e1e1e"
+    background_type = transparent
+    cursor_fg_color = "#1e1e1e"
+    cursor_bg_color = "#e6d4a3"
+    font = Source Code Pro 18
+    foreground_color = "#e6d4a3"
+    show_titlebar = False
+    palette = "#161819:#f73028:#aab01e:#f7b125:#719586:#c77089:#7db669:#faefbb:#7f7061:#be0f17:#868715:#cc881a:#377375:#a04b73:#578e57:#e6d4a3"
+    use_system_font = False
+    copy_on_selection = True
+    title_transmit_bg_color = "#1e1e1e"
+    title_inactive_bg_color = "#1e1e1e"
+  [[opaco18]]
+    background_color = "#1e1e1e"
+    cursor_fg_color = "#1e1e1e"
+    cursor_bg_color = "#e6d4a3"
+    font = Source Code Variable Medium 18
+    foreground_color = "#e6d4a3"
+    show_titlebar = False
+    palette = "#161819:#f73028:#aab01e:#f7b125:#719586:#c77089:#7db669:#faefbb:#7f7061:#be0f17:#868715:#cc881a:#377375:#a04b73:#578e57:#e6d4a3"
+    use_system_font = False
+    copy_on_selection = True
+    title_transmit_bg_color = "#1e1e1e"
+    title_inactive_bg_color = "#1e1e1e"
+  [[dev14]]
+    background_color = "#1e1e1e"
+    cursor_fg_color = "#1e1e1e"
+    cursor_bg_color = "#e6d4a3"
+    font = Source Code Pro 14
+    foreground_color = "#e6d4a3"
+    show_titlebar = False
+    palette = "#161819:#f73028:#aab01e:#f7b125:#719586:#c77089:#7db669:#faefbb:#7f7061:#be0f17:#868715:#cc881a:#377375:#a04b73:#578e57:#e6d4a3"
+    use_system_font = False
+    title_hide_sizetext = True
+    title_transmit_bg_color = "#1e1e1e"
+    title_receive_bg_color = "#1e1e1e"
+    title_inactive_bg_color = "#1e1e1e"
+    title_font = Sans 1
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = default
+  [[dev-eyes]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 1920:26
+      maximised = False
+      fullscreen = False
+      size = 1920, 2107
+      title = devtnascimento@devtnascimento:~
+      last_active_term = fc27fe70-288e-485f-8afb-35fea16f29f5
+      last_active_window = True
+    [[[child1]]]
+      type = VPaned
+      parent = child0
+      order = 0
+      position = 1579
+      ratio = 0.7511893434823977
+    [[[terminal2]]]
+      type = Terminal
+      parent = child1
+      order = 0
+      profile = opaco18
+      uuid = fc27fe70-288e-485f-8afb-35fea16f29f5
+      directory = ~/projects
+    [[[terminal3]]]
+      type = Terminal
+      parent = child1
+      order = 1
+      profile = opaco14
+      uuid = a569c2ac-c85c-49f0-8be3-85159aad22db
+      directory = ""
+  [[dev-split]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 1920:26
+      maximised = False
+      fullscreen = False
+      size = 1920, 2107
+      title = devtnascimento@devtnascimento:~
+      last_active_term = fc27fe70-288e-485f-8afb-35fea16f29f5
+      last_active_window = True
+    [[[child1]]]
+      type = VPaned
+      parent = child0
+      order = 0
+      position = 1579
+      ratio = 0.7511893434823977
+    [[[child2]]]
+      type = HPaned
+      parent = child1
+      order = 0
+      position = 958
+      ratio = 0.5002610966057441
+    [[[terminal3]]]
+      type = Terminal
+      parent = child2
+      order = 0
+      group = dev-split
+      profile = dev14
+      uuid = fc27fe70-288e-485f-8afb-35fea16f29f5
+    [[[terminal4]]]
+      type = Terminal
+      parent = child2
+      order = 1
+      group = dev-split
+      profile = dev14
+      uuid = 45028676-04c2-4223-af49-d46decbb1d1e
+    [[[terminal5]]]
+      type = Terminal
+      parent = child1
+      order = 1
+      group = dev-split
+      profile = dev14
+      uuid = a569c2ac-c85c-49f0-8be3-85159aad22db
+  [[dev]]
+    [[[child0]]]
+      type = Window
+      parent = ""
+      order = 0
+      position = 1920:26
+      maximised = False
+      fullscreen = False
+      size = 1920, 2107
+      title = devtnascimento@devtnascimento:~
+      last_active_term = fc27fe70-288e-485f-8afb-35fea16f29f5
+      last_active_window = True
+    [[[child1]]]
+      type = VPaned
+      parent = child0
+      order = 0
+      position = 1579
+      ratio = 0.7511893434823977
+    [[[terminal2]]]
+      type = Terminal
+      parent = child1
+      order = 0
+      group = dev
+      profile = dev14
+      uuid = fc27fe70-288e-485f-8afb-35fea16f29f5
+    [[[terminal3]]]
+      type = Terminal
+      parent = child1
+      order = 1
+      group = dev
+      profile = dev14
+      uuid = a569c2ac-c85c-49f0-8be3-85159aad22db
+[plugins]
